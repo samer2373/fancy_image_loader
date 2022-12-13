@@ -4,7 +4,7 @@ version: 0.0.1
 homepage: https://github.com/samer2373/fancy_image_loader
 
 environment:
-  sdk: '>=2.18.5 <3.0.0'
+  sdk: ">=2.18.5 <3.0.0"
   flutter: ">=2.5.0"
 
 dependencies:
@@ -83,3 +83,5 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/images/

@@ -11,23 +11,37 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: const [
-            FancyImageLoader(
-                path: ImageAssets.flutter,
-                placeholder: ImageAssets.placeholder),
-            SizedBox(
-              height: 30,
+    return MaterialApp(
+      home: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: const [
+                FancyImageLoader(
+                    height: 200,
+                    width: 200,
+                    fit: BoxFit.contain,
+                    path: ImageAssets.flutter,
+                    placeholder: ImageAssets.placeholder),
+                SizedBox(
+                  height: 30,
+                  width: double.maxFinite,
+                ),
+                FancyImageLoader(
+                  path: SVGAssets.flutter,
+                  height: 200,
+                  width: 200,
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                FancyImageLoader(
+                  path: "https://picsum.photos/200/200",
+                ),
+              ],
             ),
-            FancyImageLoader(path: SVGAssets.flutter,height:70 ,width: 100,),
-            SizedBox(
-              height: 30,
-            ),
-            FancyImageLoader(path: "https://picsum.photos/200/300"),
-          ],
+          ),
         ),
       ),
     );

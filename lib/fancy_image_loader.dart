@@ -18,8 +18,9 @@ import 'package:websafe_svg/websafe_svg.dart';
 //**************************************ImageLoader************************************/
 //*************************************************************************************/
 
-/// this is the image loader that takes the path of the image
+/// this is the image loader that takes the path of the image supports local and extrnal
 class FancyImageLoader extends StatelessWidget {
+  /// the path of the image can be any image link local, url ...
   final String path;
   final String placeholder;
   final Color? color;

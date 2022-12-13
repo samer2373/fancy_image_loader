@@ -1,15 +1,22 @@
-# fancy_image_loader
+# Fancy Image Loader
 
-A new Flutter plugin project.
+Fancy Image Loader is a new image handling plugin with placeholder and loading.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+This plugin can handle any image link (local, external(URL)), with web support for SVGs.'
+### Sources:
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### - URL
+ 
+                FancyImageLoader(
+                  path: "https://picsum.photos/200/200",
+                ),
+
+#### - Asset
+ 
+                FancyImageLoader(
+                  path: "assets/flutter.png",
+                ),
+              
 
