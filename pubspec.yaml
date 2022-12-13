@@ -1,7 +1,7 @@
 name: fancy_image_loader
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/samer2373/fancy_image_loader
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
@@ -9,6 +9,8 @@ environment:
 
 dependencies:
   flutter:
+    sdk: flutter
+  flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
@@ -34,14 +36,20 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
-    # This plugin project was generated without specifying any
-    # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
-    # then add platforms following the instruction here:
-    # https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms
-    # -------------------
-      some_platform:
-        pluginClass: somePluginClass
-    # -------------------
+      android:
+        package: com.example.fancy_image_loader
+        pluginClass: FancyImageLoaderPlugin
+      ios:
+        pluginClass: FancyImageLoaderPlugin
+      linux:
+        pluginClass: FancyImageLoaderPlugin
+      macos:
+        pluginClass: FancyImageLoaderPlugin
+      windows:
+        pluginClass: FancyImageLoaderPluginCApi
+      web:
+        pluginClass: FancyImageLoaderWeb
+        fileName: fancy_image_loader_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
