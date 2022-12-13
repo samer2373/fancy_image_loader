@@ -8,11 +8,13 @@ environment:
   flutter: ">=2.5.0"
 
 dependencies:
+  cached_network_image: ^3.2.3
   flutter:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  websafe_svg: ^2.1.2+7
 
 dev_dependencies:
   flutter_test:
