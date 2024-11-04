@@ -1,25 +1,25 @@
 name: fancy_image_loader
 description: Fancy Image Loader is a new image handling plugin with placeholder and loading.
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/samer2373/fancy_image_loader
 
 environment:
-  sdk: ">=2.18.5 <3.0.0"
-  flutter: ">=2.5.0"
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0 <4.0.0"
 
 dependencies:
-  cached_network_image: ^3.2.3
+  cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
-  websafe_svg: ^2.1.2+7
+  plugin_platform_interface: ^2.1.8
+  websafe_svg: ^3.0.1+4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -6,8 +6,8 @@ import FlutterMacOS
 import Foundation
 
 import fancy_image_loader
-import path_provider_macos
-import sqflite
+import path_provider_foundation
+import sqflite_darwin
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   FancyImageLoaderPlugin.register(with: registry.registrar(forPlugin: "FancyImageLoaderPlugin"))

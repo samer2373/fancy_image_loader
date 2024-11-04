@@ -11,19 +11,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: SingleChildScrollView(
             child: Column(
-              children: const [
+              children: [
                 FancyImageLoader(
                     height: 200,
                     width: 200,
                     fit: BoxFit.contain,
                     path: ImageAssets.flutter,
-                    placeholder: ImageAssets.placeholder),
+                    ph: ImageAssets.placeholder),
                 SizedBox(
                   height: 30,
                   width: double.maxFinite,
